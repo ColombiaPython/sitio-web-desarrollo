@@ -37,6 +37,10 @@
     <link rel="stylesheet" type="text/css" href="/static/css/colors/yellow.css" title="yellow">
     <link rel="stylesheet" type="text/css" href="/static/css/colors/light-green.css" title="light-green"> -->
 
+    <script>
+function initMap() { var map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: {lat: -34.397, lng: 150.644} }); var geocoder = new google.maps.Geocoder(); document.getElementById('submit').addEventListener('click', function() { geocodeAddress(geocoder, map); }); } function geocodeAddress(geocoder, resultsMap) { var address = document.getElementById('address').value; geocoder.geocode({'address': address}, function(results, status) { if (status === 'OK') { resultsMap.setCenter(results[0].geometry.location); var marker = new google.maps.Marker({ map: resultsMap, position: results[0].geometry.location }); } else { alert('Geocode was not successful for the following reason: ' + status); } }); }
+    </script>
+
   </head>
 
   <body id="body">
@@ -70,6 +74,8 @@
             <li><a href="/">Home</a></li>
             
             <li><a href="/django-girls/">Django Girls</a></li>
+            
+            <li><a href="/eventos/">Eventos</a></li>
             
             <li><a href="/blog/">Blog</a></li>
             
@@ -114,11 +120,13 @@
             
         
             
-                <li><a href="/usuarios/">usuarios</a></li>
+                <li><a href="/usuarios/">Usuarios</a></li>
             
         
             
-                <li class="active"></li>
+                
+                
+                <li class="active">Ana Elles Manzur</li>
             
         
         </ol>
@@ -127,7 +135,7 @@
   </div>
 </section>
 
-<section class="blog" id="blog">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-md-offset-1 col-md-10">
@@ -188,10 +196,6 @@
 
     <!-- Main jQuery -->
     <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
-    <!-- Google Map -->
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script  src="/static/vendor/google-map/gmap.js"></script>
     <!-- Bootstrap 3.7 -->
     <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Parallax -->
@@ -208,5 +212,6 @@
     <!-- Custom js -->
     <script src="/static/js/script.js"></script>
 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap"></script>
   </body>
 </html>

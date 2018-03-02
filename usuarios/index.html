@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Sitio web de la comunidad de Python Colombia">
     <meta name="author" content="Python Colombia">
-    <title>usuarios</title>
+    <title>Usuarios</title>
 
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,6 +36,10 @@
     <link rel="stylesheet" type="text/css" href="/static/css/colors/light-blue.css" title="light-blue">
     <link rel="stylesheet" type="text/css" href="/static/css/colors/yellow.css" title="yellow">
     <link rel="stylesheet" type="text/css" href="/static/css/colors/light-green.css" title="light-green"> -->
+
+    <script>
+function initMap() { var map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: {lat: -34.397, lng: 150.644} }); var geocoder = new google.maps.Geocoder(); document.getElementById('submit').addEventListener('click', function() { geocodeAddress(geocoder, map); }); } function geocodeAddress(geocoder, resultsMap) { var address = document.getElementById('address').value; geocoder.geocode({'address': address}, function(results, status) { if (status === 'OK') { resultsMap.setCenter(results[0].geometry.location); var marker = new google.maps.Marker({ map: resultsMap, position: results[0].geometry.location }); } else { alert('Geocode was not successful for the following reason: ' + status); } }); }
+    </script>
 
   </head>
 
@@ -71,6 +75,8 @@
             
             <li><a href="/django-girls/">Django Girls</a></li>
             
+            <li><a href="/eventos/">Eventos</a></li>
+            
             <li><a href="/blog/">Blog</a></li>
             
             <li><a href="/contacto/">Contacto</a></li>
@@ -88,7 +94,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>usuarios</h2>
+        <h2>Usuarios</h2>
         <ol class="breadcrumb header-bradcrumb">
         
         
@@ -109,7 +115,9 @@
             
         
             
-                <li class="active">usuarios</li>
+                
+                
+                <li class="active">Usuarios</li>
             
         
         </ol>
@@ -118,12 +126,93 @@
   </div>
 </section>
 
-<section class="blog" id="blog">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-md-offset-1 col-md-10">
       <br><br>
-  <p><strong>Test negrita</strong></p>
+
+<h1>Usuarios</h1>
+      <ul>
+      
+      <li><a href="/usuarios/aerendon/">Alejandro E. Rendón</a></li>
+      
+      <li><a href="/usuarios/alelles16/">Ana Elles Manzur</a></li>
+      
+      <li><a href="/usuarios/andrea-perez-be/">Andrea Pérez Becerra</a></li>
+      
+      <li><a href="/usuarios/casierrav/">Carlos Andrés Sierra</a></li>
+      
+      <li><a href="/usuarios/cadavidst/">Carlos David Salgado Tabares</a></li>
+      
+      <li><a href="/usuarios/dacostaortiz/">Diego Fernando Acosta</a></li>
+      
+      <li><a href="/usuarios/goanpeca/">Gonzalo Andrés Peña Castellanos</a></li>
+      
+      <li><a href="/usuarios/gustabot42/">Gustavo Diaz Jaimes</a></li>
+      
+      <li><a href="/usuarios/ellaquimica/">Johana Sanchez</a></li>
+      
+      <li><a href="/usuarios/jhonjairoroa87/">John Jairo Roa</a></li>
+      
+      <li><a href="/usuarios/davoshack/">Juan David Hernández Giraldo</a></li>
+      
+      <li><a href="/usuarios/astrojuanlu/">Juan Luis Cano</a></li>
+      
+      <li><a href="/usuarios/humitos/">Manuel Kaufmann</a></li>
+      
+      <li><a href="/usuarios/rlaverde/">Rafael Antonio Laverde</a></li>
+      
+      <li><a href="/usuarios/wandarinca/">Wanda C. Rincón</a></li>
+      
+      <li><a href="/usuarios/yurs_ksf1/">Yurley Sanchez</a></li>
+      
+      </ul>
+
+
+<h1>Empresas / Organizaciones / Comunidades</h1>
+      <ul>
+      
+      <li><a href="/usuarios/argentina-en-python/">Argentina en Python </a></li>
+      
+      <li><a href="/usuarios/cusol-uis/">CUSOL UIS </a></li>
+      
+      <li><a href="/usuarios/django-girls-colombia/">Django Girls Colombia </a></li>
+      
+      <li><a href="/usuarios/github/">Github </a></li>
+      
+      <li><a href="/usuarios/monoku/">Monoku </a></li>
+      
+      <li><a href="/usuarios/python-bucaramanga/">Python Bucaramanga </a></li>
+      
+      <li><a href="/usuarios/python-colombia/">Python Colombia </a></li>
+      
+      <li><a href="/usuarios/python-medellin/">Python Medellín </a></li>
+      
+      <li><a href="/usuarios/psf/">Python Software Foundation </a></li>
+      
+      <li><a href="/usuarios/sihsaco/">Sistemas Hidraulicos y Sanitarios Ltda </a></li>
+      
+      <li><a href="/usuarios/uis/">Universidad Industrial de Santander </a></li>
+      
+      </ul>
+
+
+    <div class="row">
+      <div class="title text-center ">
+        
+  <div class="pagination">
+    
+      <span class="disabled">&laquo; Previous</span>
+    
+    | 1 |
+    
+      <span class="disabled">Next &raquo;</span>
+    
+  </div>
+
+      </div>
+    </div>
 
 <br><br>
       </div>
@@ -180,10 +269,6 @@
 
     <!-- Main jQuery -->
     <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
-    <!-- Google Map -->
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script  src="/static/vendor/google-map/gmap.js"></script>
     <!-- Bootstrap 3.7 -->
     <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Parallax -->
@@ -200,5 +285,6 @@
     <!-- Custom js -->
     <script src="/static/js/script.js"></script>
 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap"></script>
   </body>
 </html>
