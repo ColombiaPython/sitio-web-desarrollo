@@ -14,31 +14,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/en/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png" />
 
     <!-- CSS -->
     <!-- Themefisher Icon font -->
-    <link rel="stylesheet" href="/en/static/vendor/themefisher-font/style.css">
+    <link rel="stylesheet" href="/static/vendor/themefisher-font/style.css">
     <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="/en/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Lightbox.min css -->
-    <link rel="stylesheet" href="/en/static/vendor/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="/static/vendor/lightbox2/dist/css/lightbox.min.css">
     <!-- Slick Carousel -->
-    <link rel="stylesheet" href="/en/static/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/en/static/vendor/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/static/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/static/vendor/slick-carousel/slick/slick-theme.css">
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="/en/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 
     <!-- Colors -->
-    <!-- <link rel="stylesheet" type="text/css" href="/en/static/css/colors/green.css" title="green">
-    <link rel="stylesheet" type="text/css" href="/en/static/css/colors/red.css" title="light-red">
-    <link rel="stylesheet" type="text/css" href="/en/static/css/colors/blue.css" title="blue">
-    <link rel="stylesheet" type="text/css" href="/en/static/css/colors/light-blue.css" title="light-blue">
-    <link rel="stylesheet" type="text/css" href="/en/static/css/colors/yellow.css" title="yellow">
-    <link rel="stylesheet" type="text/css" href="/en/static/css/colors/light-green.css" title="light-green"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/colors/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="/static/css/colors/red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="/static/css/colors/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="/static/css/colors/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="/static/css/colors/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="/static/css/colors/light-green.css" title="light-green"> -->
 
     <script>
-function initMap() { var map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: {lat: -34.397, lng: 150.644} }); var geocoder = new google.maps.Geocoder(); document.getElementById('submit').addEventListener('click', function() { geocodeAddress(geocoder, map); }); } function geocodeAddress(geocoder, resultsMap) { var address = document.getElementById('address').value; geocoder.geocode({'address': address}, function(results, status) { if (status === 'OK') { resultsMap.setCenter(results[0].geometry.location); var marker = new google.maps.Marker({ map: resultsMap, position: results[0].geometry.location }); } else { alert('Geocode was not successful for the following reason: ' + status); } }); }
     </script>
 
   </head>
@@ -268,23 +267,22 @@ function initMap() { var map = new google.maps.Map(document.getElementById('map'
     </footer> <!-- end footer -->
 
     <!-- Main jQuery -->
-    <script src="/en/static/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.7 -->
-    <script src="/en/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Parallax -->
-    <script src="/en/static/vendor/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="/static/vendor/parallax/jquery.parallax-1.1.3.js"></script>
     <!-- lightbox -->
-    <script src="/en/static/vendor/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="/static/vendor/lightbox2/dist/js/lightbox.min.js"></script>
     <!-- Owl Carousel -->
-    <script src="/en/static/vendor/slick-carousel/slick/slick.min.js"></script>
+    <script src="/static/vendor/slick-carousel/slick/slick.min.js"></script>
     <!-- Portfolio Filtering -->
-    <script src="/en/static/vendor/mixitup/dist/mixitup.min.js"></script>
+    <script src="/static/vendor/mixitup/dist/mixitup.min.js"></script>
     <!-- Smooth Scroll js -->
-    <script src="/en/static/vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="/static/vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 
     <!-- Custom js -->
-    <script src="/en/static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKlxoefA1kqWrOsoZJiN6UOXgrpanKjUc&callback=initMap"></script>
   </body>
 </html>
